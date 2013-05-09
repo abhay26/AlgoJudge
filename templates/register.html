@@ -1,0 +1,11 @@
+$def with (app_header, form , app_footer)
+$:app_header
+				<div id="content" class='row-fluid'>
+					<form name="acc" method="post" class="form-horizontal">
+						$:form.render()
+						<div class="form-actions">
+							<button type="submit" class="btn btn-primary">Register Me!</button>  
+						</div>
+					</form>
+				</div><br>
+$:app_footer

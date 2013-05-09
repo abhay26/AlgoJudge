@@ -1,0 +1,16 @@
+$def with (app_header, bodycontent, app_footer)
+$:app_header
+				<div id="content" class='row-fluid'>
+					<center><h1>Submission Status</h1></center>
+					<table class='table table-striped'>
+						<thead>
+							<td>ID</td>
+							<td>Username</td>
+							<td>Problem</td>
+							<td>Status</td>
+						</thead>
+						$:bodycontent
+					</table>
+				</div>
+$:app_footer
+					

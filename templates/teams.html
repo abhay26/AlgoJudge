@@ -1,0 +1,14 @@
+$def with (app_header, teams, total, app_footer)
+$:app_header
+				<div id="content" class='row-fluid'>
+					<center><h1>Registered Teams: $:total</h1></center>
+					<table class="table table-striped">
+						<thead>
+							<td>Username</td>
+							<td>Name</td>
+							<td>College</td>
+						</thead>
+						$:teams
+					</table>
+				</div>
+$:app_footer

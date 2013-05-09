@@ -1,0 +1,17 @@
+$def with (app_header, bodycontent, app_footer)
+$:app_header
+				<div id="content" class='row-fluid'>
+					<div class = 'span9 main'>
+						<center><h1>Rank List</h1></center>
+						<table class="table table-striped">
+							<thead>
+								<td>Rank</td>
+								<td>Username</td>
+								<td>Solved</td>
+							</thead>
+								$:bodycontent
+							</table>
+					</div>
+				</div>
+$:app_footer
+					

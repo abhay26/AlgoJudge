@@ -1,0 +1,13 @@
+$def with (app_header, form, app_footer)
+$:app_header
+				<div id="content" >
+					<h1>Fill in the details:</h1>
+					<form name="submission" method="post" class="form-horizontal">
+						$:form.render()
+						<div class="form-actions">
+							<button type="submit" class="btn btn-primary">Submit!</button> 
+						</div>
+					</form>
+				</div>
+$:app_footer
+					
